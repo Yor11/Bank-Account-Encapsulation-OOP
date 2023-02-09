@@ -16,9 +16,8 @@ public class Main {
 			String accountName = br.readLine();
 			
 			System.out.print("Account Number: ");
-			
-            int accountNumber = Integer.parseInt(br.readLine());
-            System.out.println("-----------------");
+		        int accountNumber = Integer.parseInt(br.readLine());
+                        System.out.println("-----------------");
 
 			BankAccount objBankAcc = new BankAccount(accountName, accountNumber);
 			objBankAcc.showDetails();
@@ -43,7 +42,6 @@ public class Main {
 				double depOpt = Double.parseDouble(br.readLine());
 
 		   if (depOpt > 0) {
-
 						balance =+ depOpt;
 						deposit.setBalance(balance);
 						
@@ -55,7 +53,6 @@ public class Main {
 						System.out.println("Invalid Number!");
 					}
 				}
-
 				// Withdraw 
 				if (option == 2) {
 					System.out.print("\nENTER AMOUNT TO WITHDRAW: ");
@@ -73,10 +70,9 @@ public class Main {
 
 					else {
 						System.out.println("Insuffiecent Funds!");
-
 					}
 				}
-
+				
 				// Exit 
 				if (option == 3) {
 					System.out.print("\nTHANK YOU!");
